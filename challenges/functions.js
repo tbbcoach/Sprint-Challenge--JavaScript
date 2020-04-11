@@ -16,16 +16,26 @@ function consume(a, b, callback) {
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 function consume(a, b, callback) {
-  return function add (callback,(a+b));
-  return function multiply (callback,(a*b));
-  return function greeting (callback, ('Hello first-name last-name, nice to meet you!'));
-}
+  let add = (a + b); 
+    callback(add);
+  };
+  function consume(a, b, callback) {
+  let multiply = (a*b);
+    callback(a*b);
+  };
+  function consume(a, b, callback) {
+  let greeting = (a, b);
+  callback(`Hello ${first-name} ${last-name}`)
+  };
+  //return function multiply (callback,(a*b));
+  //return function greeting (callback, ('Hello first-name last-name, nice to meet you!'));
+
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
- console.log(consume(2, 2, add)); // 4
- console.log(consume(10, 16, multiply)); // 160
- console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+// console.log(consume(2, 2, add)); // 4
+ //console.log(consume(10, 16, multiply)); // 160
+ //console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 

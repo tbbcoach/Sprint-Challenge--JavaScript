@@ -1,5 +1,5 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
-//function CuboidMaker(length, width, height) {
+// function CuboidMaker(length, width, height) {
   //  this.length = length;
   //  this.width = width;
   //  this.length = length;
